@@ -5,5 +5,7 @@ i wrote some basic codes in the process of learning. <br>
 This repository is used to store my codes-school, <br>
 i will categorize different courses as follow: <br>
 
-
+1) C Programing
+2) Object-oriented Programing (OOP)(C++)
+3) Web Applications
 
