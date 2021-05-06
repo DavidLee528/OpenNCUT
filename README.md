@@ -1,8 +1,9 @@
 # code_school
 
-There are several courses that require to coding, <br>
+- There are several courses that require to coding, <br>
 i wrote some basic codes in the process of learning. <br>
-This repository is used to store my codes-school, <br>
+<br>
+- This repository is used to store my codes-school, <br>
 i will categorize different courses as follow: <br>
 
 1) C Programing
