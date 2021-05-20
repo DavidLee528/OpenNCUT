@@ -35,8 +35,8 @@ private:
     string m_title;     // 职称
 public: 
     CTeacher(
-        const string &name, const CDate &birth, string sex, const string &addr, 
-        const string &pho, const string &title): 
+        const string &name, const CDate &birth, string sex, 
+        const string &addr, const string &pho, const string &title): 
         m_name(name), m_birthday(birth), m_sex(sex), m_address(addr), m_phone_no(pho), m_title(title) {  }
 protected: 
     void Display(ostream &os = cout); 
