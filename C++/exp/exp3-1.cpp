@@ -14,7 +14,7 @@ class CPerson {
 private: 
     string m_name;  // 姓名
     size_t m_age;   // 年龄
-    string m_sex;     // 性别（0代表女性）
+    string m_sex;   // 性别
 public: 
     CPerson() = default; 
     CPerson(string name, size_t age, string sex): m_name(name), m_age(age), m_sex(sex) {  }
