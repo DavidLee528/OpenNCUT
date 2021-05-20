@@ -29,7 +29,7 @@ class CTeacher {
 private: 
     string m_name;      // 姓名
     CDate m_birthday;   // 出生日期
-    string m_sex;       // 性别(0表示女性)
+    string m_sex;       // 性别
     string m_address;   // 地址
     string m_phone_no;  // 电话号码
     string m_title;     // 职称
@@ -55,7 +55,7 @@ class CCadre {
 private: 
     string m_name;      // 姓名
     CDate m_birthday;   // 出生日期
-    string m_sex;         // 性别(0表示女性)
+    string m_sex;       // 性别
     string m_address;   // 地址
     string m_phone_no;  // 电话号码
     string m_post;      // 职务
