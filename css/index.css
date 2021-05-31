@@ -1,0 +1,162 @@
+/* 初始化全部选择器的margin和padding属性 */
+* {
+    margin: 0; 
+    padding: 0; 
+}
+
+body {
+    color: dimgrey;
+    background-color: rgb(0, 0, 0);
+}
+
+#banner {
+    background-color: firebrick;
+    height: 100px;
+    text-align: center;
+    color: floralwhite;
+    font-size: 38px; 
+    font-family: 'Times New Roman', Times, serif; 
+}
+
+/* 设置菜单外包属性 */
+#menu {
+	height: 40px;
+	margin: 0 auto;
+	background: rgb(65, 65, 65);
+    text-align: center;
+    color: floralwhite;
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+
+    position: relative;
+    z-index: 2;
+}
+
+/* 设置ul的列表样式和行高 */
+ul {
+    display:inline-block; 
+    overflow:auto; 
+	list-style: none;
+	line-height: 40px;
+}
+
+/*设置a的文本装饰为none、文本居中对齐、显示为块显示*/
+a {
+	text-decoration: none;
+	text-align: center;
+	padding: 0 20px;
+	color: rgb(255, 255, 255);
+	display: block;
+}
+
+/* 一级菜单左侧浮动 */
+ul li {
+    display:inline; 
+    float: left; 
+    width: 120px;
+}
+
+/* 二级菜单默认不显示 */
+ul li ul li {
+    float: none; 
+    display: none; 
+}
+
+/* 当鼠标经过一级菜单时显示二级菜单 */
+ul li:hover li {
+    display: block; 
+}
+
+/* 设置a标签背景 */
+ul li ul li a {
+    background-color: rgb(65, 65, 65);
+}
+
+/* 经过一级菜单的背景 */
+a:hover {
+    background-color: rgb(0, 0, 0); 
+}
+
+
+/*设置二级菜单经过时的背景颜色*/
+ul li ul li a:hover {
+	background-color: rgb(0, 0, 0);
+}
+
+#main {
+    font-family: 'Times New Roman', Times, serif;
+    position: relative;
+    z-index: 1;
+    text-align: center;
+}
+
+#name {
+    font-size: 26px;
+}
+
+#eduexp {
+    font-size: 20px;
+    margin: auto;
+}
+
+/* floatTest - START */
+
+#a{
+    width: 350px;
+    height: 20px;
+    background-color: rgb(65, 65, 65);
+    position:absolute;
+}
+
+/* floatText - END */
+
+/* Timer - START */
+
+#times{ 
+    position: absolute; 
+    left: 500px;
+    top: 190px;
+
+    width: 350px;
+    height: 50px;
+    font-size: 25px;
+    text-align: center;
+    line-height: 50px;
+    
+    /*如果不加实线无法显示边框*/
+    /* border: 3px solid gray;   */
+}
+
+/* Timer - END */
+
+/* Greeting - START */
+
+#greeting{
+    position: absolute;
+    left: 840px;
+    top: 190px;
+
+    width: 100px;
+    height: 50px;
+    font-size: 25px;
+    text-align: center;
+    line-height: 50px;
+
+     /*如果不加实线无法显示边框*/
+    /* border: 3px solid gray;  */
+}
+
+/*  Greeting - END  */
+
+#footer {
+    height: 40px;
+	margin: 0;
+	background: rgb(65, 65, 65);
+    text-align: center;
+    color: rgb(120, 120, 120);
+    font-size: 17px;
+    font-family: 'Times New Roman', Times, serif;
+    /* position: absolute;
+    bottom: 0; */
+    margin-top: 8px;
+}

@@ -1,0 +1,10 @@
+/* 初始化全部选择器的margin和padding属性 */
+* {
+    margin: 0; 
+    padding: 0; 
+}
+
+body {
+    color: dimgrey;
+    background-color: rgb(0, 0, 0);
+}

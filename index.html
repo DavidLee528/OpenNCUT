@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HomePage</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <script src="./js/floatText.js"></script>
+</head>
+<body>
+
+    <div class="bd">
+
+        <div id="banner">
+            <h1>MyHomePage</h1>
+        </div>
+
+        <div id="menu">
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+
+                <li><a href="#">Resume</a>
+                    <ul>
+                        <li><a href="./html/rsm_exp.html">Experience</a></li>
+                        <li><a href="./html/rsm_hby.html">Hobby</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="#">ImageWall</a>
+                    <ul>
+                        <li><a href="./html/img_spt.html">Sport</a></li>
+                        <li><a href="#">Nature</a></li>
+                        <li><a href="#">Ecological</a></li>
+                        <li><a href="#">Humanities</a></li>
+                        
+                    </ul>
+                </li>
+
+                <li><a href="#">Links</a>
+                    <ul>
+                        <li><a href="https://www.google.com/" target="_blank">Google</a></li>
+                        <li><a href="https://www.bing.com/" target="_blank">Bing</a></li>
+                        <li><a href="http://www.ncut.edu.cn/" target="_blank">NCUT</a></li>
+                        <li><a href="http://www.is202.top/" target="_blank">InfoSec202</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="#">Contact</a>
+                    <ul>
+                        <li><a href="#">Email</a></li>
+                        <li><a href="#">Phone</a></li>
+                        <li><a href="#">Wechat</a></li>
+                        <li><a href="#">PGP</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="#">About</a></li>
+            </ul>
+        </div>
+
+        <br>
+
+        <div id="a">
+            <p>Welcome to my website, have a nice day.  </p> 
+		</div>
+
+        <div id="greeting"></div>
+        <div id="times"><p>TimeLoading</p></div>
+        <script type="text/javascript">
+            //得到时间并写入div
+            function getDate(){
+                //获取当前时间
+                //格式化为本地时间格式
+                var curr_time = new Date();
+                var local_curr_time = curr_time.toLocaleString();
+
+                //获取div
+                //将时间写入div
+                var target_div = document.getElementById("times");
+                target_div.innerHTML = "现在是" + local_curr_time;
+
+                // 获取小时数
+                // 判断上午、下午、晚上
+                var hrs = curr_time.getHours(); 
+                var greeting_str; 
+                if (hrs >= 0 && hrs < 11) greeting_str = ", 上午好!"; 
+                if (hrs >= 12 && hrs < 13) greeting_str = ", 中午好!"; 
+                if (hrs >= 13 && hrs < 18) greeting_str = ", 下午好!"; 
+                if (hrs >= 18 && hrs < 24) greeting_str = ", 晚上好!"; 
+                
+                // 获取greeting块
+                // 将问候语写入greeting块
+                var greeting_div = document.getElementById("greeting"); 
+                greeting_div.innerHTML = greeting_str; 
+            }
+            //使用定时器每秒向div写入当前时间
+            setInterval("getDate()",1000);
+        </script>
+
+        <div id="main">
+            <br><br><br><br><br>
+            <img src="./images/mypic.jpg" alt="MyPicture" width="500px">
+            <br><br>
+            <p id="name">TianhaoLee</p>
+            <br>
+            <p>Cyberspace Security Student</p>
+            <p>Beijing, China</p>
+            <p>Born on 2002-05-28</p>
+            <p>Interest in Photography, Coding, Penetration Test, MTB Enduro, Hiking, … …</p>
+        </div>
+        
+        
+        <br><br><br>
+        <div id="footer">
+            <p>Tianhao's Homepage</p>
+            <p>2021.05</p>
+        </div>
+
+        
+    </div>
+    
+    
+</body>
+</html>
