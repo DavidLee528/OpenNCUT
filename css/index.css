@@ -7,6 +7,7 @@
 body {
     color: dimgrey;
     background-color: rgb(0, 0, 0);
+    overflow-x: hidden;
 }
 
 #banner {
@@ -102,7 +103,7 @@ ul li ul li a:hover {
 /* floatTest - START */
 
 #a{
-    width: 350px;
+    width: 330px;
     height: 20px;
     background-color: rgb(65, 65, 65);
     position:absolute;
@@ -114,10 +115,10 @@ ul li ul li a:hover {
 
 #times{ 
     position: absolute; 
-    left: 500px;
+    left: 485px;
     top: 190px;
 
-    width: 350px;
+    width: 260px;
     height: 50px;
     font-size: 25px;
     text-align: center;
@@ -133,10 +134,10 @@ ul li ul li a:hover {
 
 #greeting{
     position: absolute;
-    left: 840px;
+    left: 700px;
     top: 190px;
 
-    width: 100px;
+    width: 300px;
     height: 50px;
     font-size: 25px;
     text-align: center;

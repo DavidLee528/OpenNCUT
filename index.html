@@ -73,21 +73,22 @@
                 //获取当前时间
                 //格式化为本地时间格式
                 var curr_time = new Date();
-                var local_curr_time = curr_time.toLocaleString();
+                var local_curr_time = curr_time.toTimeString();
+                // var local_curr_time = curr_time.toLocaleString();
 
                 //获取div
                 //将时间写入div
                 var target_div = document.getElementById("times");
-                target_div.innerHTML = "现在是" + local_curr_time;
+                target_div.innerHTML = "The Time is " + local_curr_time;
 
                 // 获取小时数
                 // 判断上午、下午、晚上
                 var hrs = curr_time.getHours(); 
                 var greeting_str; 
-                if (hrs >= 0 && hrs < 11) greeting_str = ", 上午好!"; 
-                if (hrs >= 12 && hrs < 13) greeting_str = ", 中午好!"; 
-                if (hrs >= 13 && hrs < 18) greeting_str = ", 下午好!"; 
-                if (hrs >= 18 && hrs < 24) greeting_str = ", 晚上好!"; 
+                if (hrs >= 0 && hrs < 11) greeting_str = ", Good Morning!"; 
+                if (hrs >= 12 && hrs < 13) greeting_str = ", Good Afternoon!"; 
+                if (hrs >= 13 && hrs < 18) greeting_str = ", Good Afternoon!"; 
+                if (hrs >= 18 && hrs < 24) greeting_str = ", Good Evening!"; 
                 
                 // 获取greeting块
                 // 将问候语写入greeting块
