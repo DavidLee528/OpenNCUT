@@ -149,6 +149,17 @@ ul li ul li a:hover {
 
 /*  Greeting - END  */
 
+/* PGP - START */
+
+#pgp{
+    width: 600px; 
+    position: relative;
+    left: 400px; 
+    text-align: center;
+}
+
+/* PGP - END */
+
 #footer {
     height: 40px;
 	margin: 0;
