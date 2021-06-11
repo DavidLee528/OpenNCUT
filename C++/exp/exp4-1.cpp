@@ -1,7 +1,4 @@
 #include <iostream>
-#include <cstdlib>
-#include <algorithm>
-#include <cmath>
 
 using namespace std; 
 
@@ -15,7 +12,12 @@ public:
     virtual double Length() = 0; 
     virtual void printArea() = 0; 
     virtual void printLength() = 0; 
+    virtual void printInfo(CShape *rhs); 
 }; 
+
+void CShape::printInfo(CShape *rhs) {
+    cout << "area: " << (*rhs).Area() << "  length: " << (*rhs).Length() << endl; 
+}
 
 /* =========================================== */
 /*          DERIVED CLASS - CCircle            */
@@ -114,29 +116,23 @@ void CRectangle::printLength() {
 
 int main() {
 
-    CShape *pShape; 
+    CShape *pShape = nullptr; 
 
     // 圆
     double radius = 123.456; 
     pShape = new CCircle(radius); 
-    pShape->printArea(); 
-    pShape->printLength(); 
-    cout << endl; 
+    pShape->printInfo(pShape); 
 
     // 正方形
     double length = 123.456; 
     pShape = new CSquare(length); 
-    pShape->printArea(); 
-    pShape->printLength(); 
-    cout << endl; 
+    pShape->printInfo(pShape); 
 
     // 矩形
     double width = 123.456; 
     double height = 234.567; 
     pShape = new CRectangle(width, height); 
-    pShape->printArea(); 
-    pShape->printLength(); 
-    cout << endl; 
+    pShape->printInfo(pShape); 
 
     return 0; 
 }
