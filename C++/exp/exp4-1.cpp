@@ -114,25 +114,26 @@ void CRectangle::printLength() {
     cout << " > Rectangle Length: " << Length() << endl; 
 }
 
+void Show(CShape *rhs) {
+    rhs->printInfo(rhs); 
+}
+
+
 int main() {
 
     CShape *pShape = nullptr; 
 
     // 圆
-    double radius = 123.456; 
-    pShape = new CCircle(radius); 
-    pShape->printInfo(pShape); 
+    pShape = new CCircle(123.456); 
+    Show(pShape); 
 
     // 正方形
-    double length = 123.456; 
-    pShape = new CSquare(length); 
-    pShape->printInfo(pShape); 
+    pShape = new CSquare(123.456); 
+    Show(pShape); 
 
     // 矩形
-    double width = 123.456; 
-    double height = 234.567; 
-    pShape = new CRectangle(width, height); 
-    pShape->printInfo(pShape); 
+    pShape = new CRectangle(123.456, 234.567); 
+    Show(pShape); 
 
     return 0; 
 }
