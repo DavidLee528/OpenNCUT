@@ -24,7 +24,7 @@ bool IsMatching(const std::string &str) {
     CmpFunc_t cmp_l = [](char opt) noexcept -> bool { return opt == '}'; }; 
 
     std::stack<char> s { }; 
-    std::map<char, decltype(cmp_s)> check {{'(', cmp_s}, {'[', cmp_m}, {'{', cmp_l}}; 
+    std::map<char, CmpFunc_t> check {{'(', cmp_s}, {'[', cmp_m}, {'{', cmp_l}}; 
 
     for (std::string::const_iterator iter = str.cbegin(); iter != str.cend(); ++iter) {
         if (*iter == '(' || *iter == '[' || *iter == '{') {
