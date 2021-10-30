@@ -17,7 +17,6 @@ typedef struct Node {
  */
 Person* Init(int n, int *arr) {
     // 创建首节点
-    // Person *head = (Person*)malloc(sizeof(Person)); 
     Person *head = new Person; 
 
     // 设置首节点值
