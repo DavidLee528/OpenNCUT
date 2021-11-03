@@ -16,25 +16,13 @@ typedef struct Node {
  * @return {Person*} 返回已经初始化的循环链表
  */
 Person* Init(int n, int *arr) {
-    // 创建首节点
-    Person *head = new Person; 
-
-    // 设置首节点值
-    head->idx = 1; 
-    head->number = arr[0]; 
-    head->next = nullptr; 
-
-    // 创建循环节点
+    // 创建首节点和循环节点
+    Person *head = new Person{1, arr[0], nullptr}; 
     Person *cyclic = head; 
 
+    // 创建并链接各节点
     for (int i = 1; i < n; ++i) {
-        // 创建各节点
-        Person *body = new Person; 
-        // 设置各节点值
-        body->idx = i + 1; 
-        body->number = arr[i]; 
-        body->next = nullptr; 
-        // 链接各节点
+        Person *body = new Person{i + 1, arr[i], nullptr}; 
         cyclic->next = body; 
         cyclic = cyclic->next; 
     }
@@ -55,10 +43,10 @@ Person* Init(int n, int *arr) {
  * @return {vector<int>} 出列序号(idx)序列
  */
 vector<int> Remove(Person *head, int m, int n) {
-    // 创建当前节点并使其指向首节点
+    // 创建当前节点
     Person *curr = head; 
 
-    // 当前节点的前驱节点
+    // 创建当前节点的前驱节点
     Person *before_curr = head; 
     while (before_curr->next != curr) before_curr = before_curr->next; 
 
@@ -79,6 +67,7 @@ vector<int> Remove(Person *head, int m, int n) {
         ret.push_back(curr->idx); 
 
         // 删除节点
+        // 释放内存
         Person *to_delete = curr; 
         before_curr->next = curr->next; 
         curr = curr->next; 
@@ -95,15 +84,11 @@ int main() {
     cin >> m >> n; 
 
     int *arr = new int[n + 1]; 
-    for (int i = 0; i < n; ++i) {
-        cin >> arr[i]; 
-    }
+    for (int i = 0; i < n; ++i) cin >> arr[i]; 
 
     vector<int> res = Remove(Init(n, arr), m, n);  
 
-    for (vector<int>::const_iterator iter = res.cbegin(); iter != res.cend(); ++iter) {
-        cout << *iter << " "; 
-    }
+    for (auto elem : res) cout << elem << " "; 
     cout << endl; 
 
     return 0; 
