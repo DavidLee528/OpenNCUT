@@ -75,7 +75,7 @@ vector<string> make_bracket_string(const vector<string> &src) {
  * @param {size_t} index of error bracket
  * @return {bool} Return true if str is an avaliable bracket array
  */
-bool IsMatching(const std::string &str, size_t &errIndex) {
+bool is_matching(const std::string &str, size_t &errIndex) {
     char head { str.at(0) }; 
     char tail { str.at(str.length() - 1) }; 
     if (head == ')' || head == ']' || head == '}') return false; 
@@ -184,7 +184,7 @@ int main() {
     #endif
 
     size_t errIndex = 0; 
-    if (IsMatching(srcString, errIndex)) cout << srcString << endl; 
+    if (is_matching(srcString, errIndex)) cout << srcString << endl; 
     else {
         size_t errIndexFind = errIndex; 
         size_t lineNumber = 0; 
