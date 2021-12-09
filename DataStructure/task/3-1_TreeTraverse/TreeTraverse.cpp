@@ -33,16 +33,20 @@ BTNode* build_tree(const string &dlr, size_t preStart, size_t preEnd, const stri
 }
 
 void get_tree(BTNode *bt, const string &dlr, const string &ldr) {
-    BTNode *tmp = build_tree(dlr, 0, dlr.length() - 1, ldr, 0, ldr.length() - 1); 
-    bt->value = tmp->value; 
-    bt->lchild = tmp->lchild; 
-    bt->rchild = tmp->rchild; 
+    *bt = *build_tree(dlr, 0, dlr.length() - 1, ldr, 0, ldr.length() - 1); 
 }
 
 void lrd(BTNode *bt, string &res) {
+    // 递归终止
     if (!bt) return ;
+
+    // 访问左子树
     lrd(bt->lchild, res); 
+
+    // 访问右子树
     lrd(bt->rchild, res); 
+
+    // 保存后序遍历顺序
     res += bt->value; 
 }
 
@@ -53,12 +57,13 @@ string trans_to_lrd(const string &dlr, const string &ldr) {
     // 种树
     get_tree(bt, dlr, ldr); 
 
-    // 后跟遍历序列结果
+    // 后序遍历序列结果
     string ret {""}; 
 
     // 后根遍历
     lrd(bt, ret);
 
+    // 返回结果
     return ret; 
 }
 
