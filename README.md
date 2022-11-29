@@ -5,6 +5,7 @@ The resources are classificated by time.
 ## 20-21-1
 
 - C Programing
+- Introduction to Information Security
 
 ## 20-21-2
 
@@ -14,10 +15,12 @@ The resources are classificated by time.
 ## 21-22-1
 
 - Data Structure
-
+- Information Security Mathematics Foundation
 
 ## 21-22-2
 
+- Computer Network
+- Computer Organization
 - Data Security
 - Applied Cryptography
 - Data Security Course Design
@@ -27,7 +30,7 @@ The resources are classificated by time.
 
 - Net Programming
 - Java 
-- Operation System Lab
-- Digital Image Processing Lab
-- Reverse Engineering Lab
+- Operation System
+- Digital Image Processing
+- Reverse Engineering
 - Assembly
