@@ -7,9 +7,32 @@ This repository is used to store my codes-school, <br>
 i will categorize different courses as follow: <br>
 <br>
 
-1. C Programing
-2. Object-oriented Programing (OOP)(C++)
-3. Web Applications
-4. Data Structure
-5. Cryptography
-6. Data Security
+## 20-21-1
+
+- C Programing
+
+## 20-21-2
+
+- Object-oriented Programing (C++)
+- Web Applications
+
+## 21-22-1
+
+- Data Structure
+
+
+## 21-22-2
+
+- Data Security
+- Applied Cryptography
+- Data Security Course Design
+- Applied Cryptography Course Design
+
+## 22-23-1
+
+- Net Programming
+- Java 
+- Operation System Lab
+- Digital Image Processing Lab
+- Reverse Engineering Lab
+- Assembly
