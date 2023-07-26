@@ -1,0 +1,24 @@
+# ninja log v5
+1	2257	1668520577403117400	test/CMakeFiles/test_fcfs.dir/__/src/process.cpp.o	a16cbe3533e95f21
+0	9824	1668520584973117400	test/CMakeFiles/test_fcfs.dir/test_fcfs.cpp.o	9e45bfa7456e90aa
+0	3174	1668520578333117400	test/CMakeFiles/test_fcfs.dir/__/src/fcfs.cpp.o	2ef4f3d55657e71d
+4975	10595	1668520585753117400	src/CMakeFiles/process_scheduler_simulator.dir/hrrn.cpp.o	30c11d6b3c7d529a
+1020	1683	1668584681144985700	src/process_scheduler_simulator	6d88d46b4aad913b
+3	5313	1668520580463117400	test/CMakeFiles/test_hrrn.dir/__/src/hrrn.cpp.o	10c9153bbd9f4114
+1	9477	1668520584623117400	test/CMakeFiles/test_sjf.dir/test_sjf.cpp.o	602c4e0f8852aeba
+3174	8107	1668520583263117400	src/CMakeFiles/process_scheduler_simulator.dir/fcfs.cpp.o	d780440abf7a14b
+1	4457	1668520579623117400	test/CMakeFiles/test_sjf.dir/__/src/sjf.cpp.o	bd2d84b4afcb45c6
+2839	5115	1668520580273117400	src/CMakeFiles/process_scheduler_simulator.dir/process.cpp.o	4a3ef815bac8833f
+9824	12829	1668520587983117400	test/test_fcfs	f480162ba7be1f8f
+2	2738	1668520577893117400	test/CMakeFiles/test_sjf.dir/__/src/process.cpp.o	468047bbf29c1a2d
+9477	12411	1668520587563117400	test/test_sjf	92c27337590b12fe
+2	8530	1668520583683117400	test/CMakeFiles/test_hrrn.dir/test_hrrn.cpp.o	773908123247c140
+1025	1652	1668584681114985700	test/test_rr	5e8aef37a1e63bc8
+1	1019	1668584680484985700	src/CMakeFiles/process_scheduler_simulator.dir/rr.cpp.o	d51836df98ca8afd
+2738	4975	1668520580133117400	test/CMakeFiles/test_rr.dir/__/src/process.cpp.o	e12bacdaf2d64696
+8532	12332	1668520587483117400	test/test_hrrn	a8aa3c0fcacdf9a7
+1	1025	1668584680494985700	test/CMakeFiles/test_rr.dir/__/src/rr.cpp.o	4f92e906c36baaeb
+2	1509	1668584309234985700	test/CMakeFiles/test_rr.dir/test_rr.cpp.o	2201feadfe162177
+4457	9521	1668520584673117400	src/CMakeFiles/process_scheduler_simulator.dir/sjf.cpp.o	4a67d1c9b7a1b932
+3	2838	1668520578003117400	test/CMakeFiles/test_hrrn.dir/__/src/process.cpp.o	60cd6fb47b3584c5
+3	859	1668584308584985700	src/CMakeFiles/process_scheduler_simulator.dir/main.cpp.o	33c6e85d78e288ff

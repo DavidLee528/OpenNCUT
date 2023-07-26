@@ -1,0 +1,128 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1,
+						2
+					],
+					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "2.8"
+					},
+					"projectIndex" : 0,
+					"source" : "."
+				},
+				{
+					"build" : "test",
+					"jsonFile" : "directory-test-Debug-451c0598f41488bb20b9.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "2.8"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "test",
+					"targetIndexes" : 
+					[
+						1,
+						2,
+						3,
+						4
+					]
+				},
+				{
+					"build" : "src",
+					"jsonFile" : "directory-src-Debug-b6cf2213fc5053b67c22.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "2.8"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "src",
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0,
+						1,
+						2
+					],
+					"name" : "PROCESS_SCHEDULE_SIMULATOR",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 2,
+					"id" : "process_scheduler_simulator::@145eef247bfb46b6828c",
+					"jsonFile" : "target-process_scheduler_simulator-Debug-44ee256337c2264000c6.json",
+					"name" : "process_scheduler_simulator",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "test_fcfs::@36f028580bb02cc8272a",
+					"jsonFile" : "target-test_fcfs-Debug-580d8736388e3af2b2c0.json",
+					"name" : "test_fcfs",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "test_hrrn::@36f028580bb02cc8272a",
+					"jsonFile" : "target-test_hrrn-Debug-2e8b2492b286624a9cf5.json",
+					"name" : "test_hrrn",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "test_rr::@36f028580bb02cc8272a",
+					"jsonFile" : "target-test_rr-Debug-c9da749f7e6115f675e8.json",
+					"name" : "test_rr",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "test_sjf::@36f028580bb02cc8272a",
+					"jsonFile" : "target-test_sjf-Debug-90927a936b0a0fccd686.json",
+					"name" : "test_sjf",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/david/study/course/22-23-1/os/exp/exp1_process-scheduler/process_scheduler_simulator/build",
+		"source" : "/home/david/study/course/22-23-1/os/exp/exp1_process-scheduler/process_scheduler_simulator"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}
