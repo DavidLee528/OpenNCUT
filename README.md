@@ -4,6 +4,7 @@ Congratulations on finding this repository.
 
 ## Structure 
 
+```
 .
 ├── README.md
 ├── graduate
@@ -16,6 +17,7 @@ Congratulations on finding this repository.
             ├── courses
             │   ├── ... ...
             └── readme.md
+```
 
 ## How to contribute?
 
